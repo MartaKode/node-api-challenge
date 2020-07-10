@@ -8,7 +8,7 @@ const ProjectDetails = () => {
     const params = useParams()
 
     useEffect(() => {
-        axios.get(`http://localhost:8000/api/projects/${params.id}/actions`)
+        axios.get(`https://marta-node-sprint.herokuapp.com/api/projects/${params.id}/actions`)
             .then(res => {
                 console.log(res)
                 setProjectDetails(res.data)
@@ -17,7 +17,7 @@ const ProjectDetails = () => {
                 console.log(err)
             })
 
-            axios.get(`http://localhost:8000/api/projects/${params.id}`)
+            axios.get(`https://marta-node-sprint.herokuapp.com/api/projects/${params.id}`)
             .then(res => {
               console.log(res)
               setProjectDescription(res.data)

@@ -10,7 +10,7 @@ function App() {
   const [projects, setProjects] = useState([])
 
   useEffect(() => {
-    axios.get("http://localhost:8000/api/projects")
+    axios.get("https://marta-node-sprint.herokuapp.com/api/projects")
       .then(res => {
         console.log(res)
         setProjects(res.data)
