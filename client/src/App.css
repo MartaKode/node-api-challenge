@@ -1,0 +1,113 @@
+body{
+  background-color: #282c34;
+  color: white;
+  font-size: 1.2rem;
+}
+
+*{
+  /* border: 1px grey solid; */
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a{
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.projectCard{
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  width: 50%;
+
+  border-bottom: 2px white outset;
+
+  padding: 1%;
+  margin: 1% 0;
+
+  background-color: rgb(118, 157, 236, .1);
+  box-shadow: -300px 20px 300px 1px rgb(118, 157, 236) ;
+  
+}
+
+.projectCard > *{
+  width:100%;
+  box-shadow: 500px -200px 300px 1px rgb(236, 118, 230) ;
+  text-shadow: 7px 4px 3px rgb(0, 0, 0) ;
+}
+
+.details{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  flex-wrap: wrap;
+}
+
+.actionCard{
+  border: 2px grey inset;
+  border-radius: 10px;
+  padding: 2%;
+  margin: 2%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  
+  /* width: 80%; */
+
+  background-color: rgb(40, 44, 52, .1);
+
+  box-shadow: 0px 400px 300px 2px rgb(118, 236, 216) ;
+  text-shadow: -7px -4px 3px rgb(0, 0, 0) ;
+}
+
+h6{
+  color: rgb(169, 169, 169, .1);
+  text-shadow: -7px -4px 1px rgb(255, 255, 255, .5) ;
+}
+
+h2{
+  text-shadow: 7px -7px 4px rgb(0, 0, 0) ;
+}
+
+.noActions{
+  color: rgb(255, 0, 0);
+  text-shadow: -7px -4px 3px rgba(255, 72, 72, 0.3) ;
+
+  border-bottom: rgb(255, 0, 0, .7) solid 1px;  
+  box-shadow: 0px 20px 130px 15px rgb(255, 0, 0);
+
+  border-radius: 10px;
+
+  padding: 1% 0;
+  width: 100%;
+
+  background: transparent;
+}
+
+.projectDescription{
+  color: rgb(0, 0, 0, .8);
+  font-weight: bold;
+  background-color: rgb(118, 157, 236, .1);
+  padding: 2%;
+  border-radius: 20px;
+
+  border-bottom: 2px white outset;
+  border-right: 2px white outset;
+
+  text-shadow: 7px 7px 15px rgb(0, 0, 0) ;
+
+  width: 70%;
+  margin-top: 6%;
+}

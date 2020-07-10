@@ -40,13 +40,25 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] Mention two parts of Express that you learned about this week.
 
+    1. req and res called the homies; they're used as middleware in an anonymous function on our methods ; they allow us to use and manipulate the request and response 
+    2. const router = express.Router() --> we can create a router through express
+
 - [ ] Describe Middleware?
+
+    It extends the functionality of the library we are working with
 
 - [ ] Describe a Resource?
 
+    Resource is the information that you are working with; it can be contained in the database, request or the response 
+    In our recent projects, the resources we were dealing with were users, posts, messages, hobbits
+
 - [ ] What can the API return to help clients know if a request was successful?
 
+    a status of 200 OK or 201 succeffully created along with an actual message describing the success of the method (in our case as json)
+
 - [ ] How can we partition our application into sub-applications?
+
+    By using routing; we can create multiple routerts that can use different databases while being managed by one and the same server
 
 ## Minimum Viable Product
 
